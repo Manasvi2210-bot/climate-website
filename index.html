@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoAware – Learn about climate change, understand its causes and effects, and discover actionable solutions for a sustainable future." />
+  <meta name="keywords" content="climate change, global warming, greenhouse effect, environment, sustainability, eco awareness" />
+  <meta name="author" content="EcoAware" />
+  <title>EcoAware – Climate Change Awareness</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION BAR
+       ============================================= -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" id="nav-logo" aria-label="EcoAware Home">
+        <div class="nav-logo-icon" aria-hidden="true">🌍</div>
+        <span class="nav-logo-text">Eco<span>Aware</span></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home"           id="nav-home">Home</a></li>
+        <li><a href="#climate-change" id="nav-climate">Climate Change</a></li>
+        <li><a href="#calculator"     id="nav-calc">Calculator</a></li>
+        <li><a href="#action-tracker"  id="nav-tracker">Action Tracker</a></li>
+        <li><a href="#climate-quiz"    id="nav-cquiz">Quiz</a></li>
+        <li><a href="#myth-fact"       id="nav-myth">Myth vs Fact</a></li>
+        <li><a href="#climate-tips"    id="nav-tips">Climate Tips</a></li>
+        <li><a href="#causes"          id="nav-causes">Causes</a></li>
+        <li><a href="#effects"        id="nav-effects">Effects</a></li>
+        <li><a href="#solutions"      id="nav-solutions">Solutions</a></li>
+        <li><a href="#take-action"    id="nav-action">Take Action</a></li>
+        <li><a href="#quiz"           id="nav-quiz">Quiz</a></li>
+        <li>
+          <a href="#quiz" id="nav-quiz-cta" class="nav-cta" aria-label="Take the Climate Quiz">
+            🧠 Take the Quiz
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <a href="#home"           id="mob-home">Home</a>
+      <a href="#climate-change" id="mob-climate">Climate Change</a>
+      <a href="#calculator"     id="mob-calc">🧮 Calculator</a>
+      <a href="#action-tracker"  id="mob-tracker">🌱 Action Tracker</a>
+      <a href="#climate-quiz"    id="mob-cquiz">🌍 Quiz</a>
+      <a href="#myth-fact"       id="mob-myth">🚧 Myth vs Fact</a>
+      <a href="#climate-tips"    id="mob-tips">💡 Climate Tips</a>
+      <a href="#causes"          id="mob-causes">Causes</a>
+      <a href="#effects"        id="mob-effects">Effects</a>
+      <a href="#solutions"      id="mob-solutions">Solutions</a>
+      <a href="#take-action"    id="mob-action">Take Action</a>
+      <a href="#quiz"           id="mob-quiz">Quiz</a>
+      <a href="#quiz"           id="mob-quiz-cta" class="nav-cta">🧠 Take the Quiz</a>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO SECTION
+       ============================================= -->
+  <section id="home" aria-labelledby="hero-heading">
+
+    <!-- Animated Particles -->
+    <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+    <div class="hero-inner container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="College Project Initiative">
+          🌱 Climate Awareness Initiative
+        </div>
+
+        <h1 class="hero-title" id="hero-heading">
+          Climate Change<br />
+          Is Real.<br />
+          <span class="highlight">Our Actions Matter.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Understand climate change, discover its impact, and learn how
+          small actions can create a more sustainable future for our planet.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#climate-change" class="btn btn-primary" id="hero-explore-btn">
+            🌿 Explore Climate Change
+          </a>
+          <a href="#quiz" class="btn btn-outline" id="hero-quiz-btn">
+            🧠 Take the Quiz
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Climate statistics">
+          <div class="stat-item">
+            <span class="stat-num" id="stat-temp">+1.1°C</span>
+            <span class="stat-label">Warming Since 1850</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-co2">421 ppm</span>
+            <span class="stat-label">CO₂ Concentration</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-ice">13%</span>
+            <span class="stat-label">Arctic Ice Lost/Decade</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Earth Visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="earth-container">
+          <!-- Rings -->
+          <div class="earth-ring"></div>
+          <div class="earth-ring"></div>
+          <div class="earth-ring"></div>
+
+          <!-- Globe -->
+          <div class="earth-globe" id="earth-globe" title="Planet Earth"></div>
+
+          <!-- Orbit Icons -->
+          <div class="orbit-item" title="Nature">🌿</div>
+          <div class="orbit-item" title="Ocean">💧</div>
+          <div class="orbit-item" title="Heat">🔥</div>
+          <div class="orbit-item" title="Solar Energy">☀️</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- =============================================
+       WHAT IS CLIMATE CHANGE?
+       ============================================= -->
+  <section id="climate-change" aria-labelledby="climate-heading">
+    <div class="container">
+
+      <div class="climate-grid">
+        <!-- Text Content -->
+        <div class="climate-content reveal">
+          <span class="section-label">📖 Understanding the Basics</span>
+          <h2 class="section-title" id="climate-heading">
+            What Is Climate Change?
+          </h2>
+          <p>
+            <strong>Climate change</strong> refers to long-term shifts in global temperatures and weather
+            patterns. While some changes occur naturally, since the 1800s, human activities have been
+            the main driver of climate change — primarily through the burning of fossil fuels like coal,
+            oil, and gas.
+          </p>
+          <p>
+            Unlike <strong>weather</strong>, which describes short-term atmospheric conditions
+            (like today's rain or sunshine), <strong>climate</strong> describes the average conditions
+            over a long period — typically 30 years or more. When we talk about climate change, we're
+            referring to these long-term shifts.
+          </p>
+          <p>
+            <strong>Global warming</strong> is the long-term heating of Earth's climate system observed
+            since the pre-industrial period (between 1850 and 1900). It is primarily driven by human
+            activities, especially fossil fuel burning, which increases heat-trapping greenhouse gas
+            levels in Earth's atmosphere.
+          </p>
+        </div>
+
+        <!-- Temperature Chart Visual -->
+        <div class="climate-visual reveal reveal-delay-2">
+          <p class="temp-chart-title">🌡️ Global Temperature Anomaly (Illustrative)</p>
+          <div class="temp-chart" role="img" aria-label="Bar chart showing rising global temperatures over decades">
+            <!-- Bars represent relative temperature anomaly -->
+            <div class="temp-bar cold"  style="height: 22%"  title="1900s: Below normal"></div>
+            <div class="temp-bar cold"  style="height: 28%"  title="1910s"></div>
+            <div class="temp-bar cold"  style="height: 30%"  title="1920s"></div>
+            <div class="temp-bar cold"  style="height: 34%"  title="1930s"></div>
+            <div class="temp-bar cold"  style="height: 36%"  title="1940s"></div>
+            <div class="temp-bar cold"  style="height: 32%"  title="1950s"></div>
+            <div class="temp-bar cold"  style="height: 35%"  title="1960s"></div>
+            <div class="temp-bar warm"  style="height: 42%"  title="1970s"></div>
+            <div class="temp-bar warm"  style="height: 54%"  title="1980s"></div>
+            <div class="temp-bar warm"  style="height: 64%"  title="1990s"></div>
+            <div class="temp-bar hot"   style="height: 74%"  title="2000s"></div>
+            <div class="temp-bar hot"   style="height: 85%"  title="2010s"></div>
+            <div class="temp-bar hot"   style="height: 100%" title="2020s: Highest on record"></div>
+          </div>
+          <div class="chart-labels" aria-hidden="true">
+            <span>1900s</span><span>10s</span><span>20s</span><span>30s</span>
+            <span>40s</span><span>50s</span><span>60s</span><span>70s</span>
+            <span>80s</span><span>90s</span><span>00s</span><span>10s</span>
+            <span>2020s</span>
+          </div>
+          <div class="chart-indicator" role="status">
+            <div class="indicator-dot"></div>
+            <p>2023 was the hottest year ever recorded on Earth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Four Info Cards -->
+      <div class="info-cards" role="list">
+
+        <article class="info-card reveal" role="listitem">
+          <div class="info-icon" style="background:rgba(40,168,88,0.1)">🌍</div>
+          <h3>What Is Climate?</h3>
+          <p>Climate is the average pattern of weather over a long period. Climate change means these patterns are shifting significantly due to human actions.</p>
+        </article>
+
+        <article class="info-card reveal reveal-delay-1" role="listitem">
+          <div class="info-icon" style="background:rgba(14,165,233,0.1)">⛅</div>
+          <h3>Weather vs. Climate</h3>
+          <p>Weather is what you see outside on any given day. Climate is the average of weather over 30+ years. "Climate is what you expect; weather is what you get."</p>
+        </article>
+
+        <article class="info-card reveal reveal-delay-2" role="listitem">
+          <div class="info-icon" style="background:rgba(239,68,68,0.1)">🌡️</div>
+          <h3>Global Warming</h3>
+          <p>Earth's average temperature has risen by ~1.1°C since pre-industrial times. Even small increases cause massive disruptions to ecosystems and human societies.</p>
+        </article>
+
+        <article class="info-card reveal reveal-delay-3" role="listitem">
+          <div class="info-icon" style="background:rgba(245,158,11,0.1)">🏭</div>
+          <h3>Greenhouse Effect</h3>
+          <p>Greenhouse gases (CO₂, CH₄, N₂O) trap heat from the Sun in our atmosphere. Human activities are intensifying this natural effect, causing the planet to overheat.</p>
+        </article>
+
+      </div>
+
+      <!-- =============================================
+           GREENHOUSE EFFECT INTERACTIVE VISUALIZATION
+           ============================================= -->
+      <div class="greenhouse-section" id="greenhouse-section">
+
+        <!-- Section Header -->
+        <div class="gh-header reveal">
+          <div class="gh-divider-row">
+            <div class="gh-divider-line"></div>
+            <span class="gh-divider-text">🔬 Interactive Visualization</span>
+            <div class="gh-divider-line"></div>
+          </div>
+          <h3 class="gh-title">How the Greenhouse Effect Works</h3>
+          <p class="gh-subtitle">
+            The greenhouse effect is the natural process that warms Earth — but human activities are
+            amplifying it dangerously. Press the button below to see the step-by-step process.
+          </p>
+        </div>
+
+        <!-- Visualization Layout: SVG + Step Panel -->
+        <div class="gh-viz-layout reveal reveal-delay-1">
+
+          <!-- SVG Diagram Wrapper -->
+          <div class="gh-svg-wrapper">
+            <svg viewBox="0 0 900 360" class="gh-svg" id="gh-svg"
+                 xmlns="http://www.w3.org/2000/svg"
+                 role="img" aria-label="Greenhouse effect diagram showing Sun, Earth, atmosphere and heat flow">
+              <defs>
+                <linearGradient id="ghSpaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%"   stop-color="#08121e"/>
+                  <stop offset="50%"  stop-color="#0c1d38"/>
+                  <stop offset="100%" stop-color="#0b1e10"/>
+                </linearGradient>
+                <radialGradient id="ghSunGrad" cx="36%" cy="36%">
+                  <stop offset="0%"   stop-color="#fefce8"/>
+                  <stop offset="30%"  stop-color="#fcd34d"/>
+                  <stop offset="70%"  stop-color="#f59e0b"/>
+                  <stop offset="100%" stop-color="#d97706"/>
+                </radialGradient>
+                <radialGradient id="ghEarthGrad" cx="35%" cy="32%">
+                  <stop offset="0%"   stop-color="#bae6fd"/>
+                  <stop offset="22%"  stop-color="#1e6fa8"/>
+                  <stop offset="48%"  stop-color="#28a858"/>
+                  <stop offset="68%"  stop-color="#1a6b3c"/>
+                  <stop offset="100%" stop-color="#0d3318"/>
+                </radialGradient>
+                <marker id="mSun" viewBox="0 0 10 10" refX="8" refY="5"
+                        markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10z" fill="#fbbf24"/>
+                </marker>
+                <marker id="mHeat" viewBox="0 0 10 10" refX="8" refY="5"
+                        markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10z" fill="#ef4444"/>
+                </marker>
+                <marker id="mTrap" viewBox="0 0 10 10" refX="8" refY="5"
+                        markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10z" fill="#f97316"/>
+                </marker>
+                <filter id="fSunGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <filter id="fGlow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <!-- Background -->
+              <rect width="900" height="360" fill="url(#ghSpaceBg)" rx="14"/>
+
+              <!-- Stars -->
+              <g fill="white">
+                <circle cx="175" cy="20"  r="1.2" opacity="0.6"/>
+                <circle cx="308" cy="12"  r="0.9" opacity="0.5"/>
+                <circle cx="428" cy="28"  r="1.1" opacity="0.7"/>
+                <circle cx="518" cy="14"  r="0.8" opacity="0.6"/>
+                <circle cx="640" cy="20"  r="1.0" opacity="0.5"/>
+                <circle cx="762" cy="10"  r="1.2" opacity="0.7"/>
+                <circle cx="850" cy="26"  r="0.9" opacity="0.5"/>
+                <circle cx="48"  cy="54"  r="0.9" opacity="0.5"/>
+                <circle cx="270" cy="66"  r="1.0" opacity="0.6"/>
+                <circle cx="870" cy="58"  r="1.1" opacity="0.5"/>
+                <circle cx="12"  cy="118" r="1.0" opacity="0.6"/>
+                <circle cx="395" cy="7"   r="1.3" opacity="0.7"/>
+                <circle cx="895" cy="98"  r="0.9" opacity="0.4"/>
+              </g>
+
+              <!-- ===== SUN ===== -->
+              <circle cx="80" cy="185" r="60" fill="#f59e0b" opacity="0.06" class="gh-sun-halo"/>
+              <circle cx="80" cy="185" r="46" fill="#fbbf24" opacity="0.09" class="gh-sun-halo2"/>
+              <circle cx="80" cy="185" r="33" fill="url(#ghSunGrad)" filter="url(#fSunGlow)" class="gh-sun-body"/>
+              <text x="80" y="230" fill="rgba(251,191,36,0.7)" font-size="10"
+                    text-anchor="middle" font-family="Inter,sans-serif" font-weight="700"
+                    letter-spacing="1.5">SUN</text>
+
+              <!-- ===== SUNLIGHT RAYS (hidden until Step 1) ===== -->
+              <line class="gh-ray" id="ghRay1"
+                    x1="115" y1="158" x2="576" y2="232"
+                    stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="10,7"
+                    opacity="0" marker-end="url(#mSun)"/>
+              <line class="gh-ray" id="ghRay2"
+                    x1="115" y1="180" x2="575" y2="250"
+                    stroke="#fcd34d" stroke-width="2.3" stroke-dasharray="10,7"
+                    opacity="0" marker-end="url(#mSun)"/>
+              <line class="gh-ray" id="ghRay3"
+                    x1="115" y1="202" x2="574" y2="264"
+                    stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="10,7"
+                    opacity="0" marker-end="url(#mSun)"/>
+              <text class="gh-ray-label" x="330" y="200"
+                    fill="rgba(252,211,77,0)" font-size="9.5" text-anchor="middle"
+                    font-family="Inter,sans-serif" font-weight="500">☀ Solar Radiation</text>
+
+              <!-- ===== EARTH ===== -->
+              <!-- Outer glow ring -->
+              <circle cx="648" cy="275" r="96" fill="rgba(26,107,60,0.08)" class="gh-earth-glow" id="ghEarthGlow"/>
+              <!-- Earth body -->
+              <circle cx="648" cy="275" r="76" fill="url(#ghEarthGrad)" class="gh-earth-body" id="ghEarthBody"/>
+              <!-- Shine highlight -->
+              <ellipse cx="627" cy="252" rx="19" ry="13" fill="rgba(255,255,255,0.12)"
+                       transform="rotate(-28,627,252)"/>
+              <text x="648" y="364" fill="rgba(96,165,250,0.72)" font-size="10"
+                    text-anchor="middle" font-family="Inter,sans-serif" font-weight="700"
+                    letter-spacing="1.5">EARTH</text>
+
+              <!-- ===== ATMOSPHERE / GAS LAYER ===== -->
+              <!-- Outer ring (semi-arc above Earth) -->
+              <path d="M 544,275 A 104,104 0 0,1 752,275"
+                    fill="rgba(40,168,88,0.07)"
+                    stroke="rgba(40,168,88,0.16)" stroke-width="1.5"
+                    class="gh-atmos-band" id="ghAtmosBand"/>
+              <!-- Atmosphere fill band -->
+              <path d="M 554,275 A 94,94 0 0,1 742,275"
+                    fill="none"
+                    stroke="rgba(40,168,88,0.11)" stroke-width="20"
+                    class="gh-atmos-fill" id="ghAtmosFill"/>
+
+              <!-- Atmosphere label -->
+              <text x="648" y="148" fill="rgba(110,231,160,0.52)" font-size="9.5"
+                    text-anchor="middle" font-family="Inter,sans-serif" font-weight="600"
+                    letter-spacing="0.8">GREENHOUSE GAS LAYER</text>
+
+              <!-- Gas molecule dots -->
+              <g class="gh-mols">
+                <circle cx="576" cy="168" r="5.5" fill="#6ee7a0" opacity="0.55" class="gh-mol"/>
+                <circle cx="608" cy="158" r="4.5" fill="#86efac" opacity="0.45" class="gh-mol"/>
+                <circle cx="645" cy="163" r="6.2" fill="#38bdf8" opacity="0.55" class="gh-mol"/>
+                <circle cx="680" cy="157" r="4.5" fill="#a3e635" opacity="0.50" class="gh-mol"/>
+                <circle cx="714" cy="163" r="5.5" fill="#fde68a" opacity="0.45" class="gh-mol"/>
+                <circle cx="746" cy="168" r="4.5" fill="#6ee7a0" opacity="0.50" class="gh-mol"/>
+              </g>
+              <!-- Gas labels -->
+              <text x="576" y="153" fill="rgba(110,231,160,0.65)" font-size="8.5"
+                    text-anchor="middle" font-family="Inter,sans-serif">CO₂</text>
+              <text x="645" y="147" fill="rgba(56,189,248,0.65)" font-size="8.5"
+                    text-anchor="middle" font-family="Inter,sans-serif">CH₄</text>
+              <text x="714" y="147" fill="rgba(252,211,77,0.65)" font-size="8.5"
+                    text-anchor="middle" font-family="Inter,sans-serif">N₂O</text>
+              <text x="746" y="153" fill="rgba(163,230,53,0.65)" font-size="8.5"
+                    text-anchor="middle" font-family="Inter,sans-serif">F-Gas</text>
+
+              <!-- ===== HEAT ARROWS UP (hidden until Step 3) ===== -->
+              <line class="gh-heat-up" id="ghHU1" x1="620" y1="200" x2="620" y2="172"
+                    stroke="#ef4444" stroke-width="2.2" opacity="0" marker-end="url(#mHeat)"/>
+              <line class="gh-heat-up" id="ghHU2" x1="648" y1="200" x2="648" y2="170"
+                    stroke="#ef4444" stroke-width="2.8" opacity="0" marker-end="url(#mHeat)"/>
+              <line class="gh-heat-up" id="ghHU3" x1="676" y1="200" x2="676" y2="172"
+                    stroke="#ef4444" stroke-width="2.2" opacity="0" marker-end="url(#mHeat)"/>
+              <!-- Heat escape (thin dashed, some escapes to space) -->
+              <line class="gh-heat-escape" id="ghHEsc" x1="648" y1="136" x2="648" y2="96"
+                    stroke="#ef4444" stroke-width="1.4" stroke-dasharray="5,4"
+                    opacity="0" marker-end="url(#mHeat)"/>
+              <text class="gh-heat-label" x="572" y="192"
+                    fill="rgba(239,68,68,0)" font-size="9.5" text-anchor="end"
+                    font-family="Inter,sans-serif" font-weight="700">🔥 HEAT</text>
+
+              <!-- ===== TRAPPED HEAT ARROWS DOWN (hidden until Step 4) ===== -->
+              <line class="gh-trap" id="ghTrap1" x1="602" y1="172" x2="602" y2="202"
+                    stroke="#f97316" stroke-width="2.2" opacity="0" marker-end="url(#mTrap)"/>
+              <line class="gh-trap" id="ghTrap2" x1="694" y1="172" x2="694" y2="202"
+                    stroke="#f97316" stroke-width="2.2" opacity="0" marker-end="url(#mTrap)"/>
+              <text class="gh-trap-label" x="726" y="192"
+                    fill="rgba(249,115,22,0)" font-size="9.5" text-anchor="start"
+                    font-family="Inter,sans-serif" font-weight="700">↩ TRAPPED</text>
+
+              <!-- Step badge (top-right corner) -->
+              <rect id="ghStepBadge" x="808" y="13" width="80" height="28" rx="7"
+                    fill="rgba(40,168,88,0.22)" stroke="rgba(40,168,88,0.45)" stroke-width="1"
+                    opacity="0"/>
+              <text id="ghStepSvgText" x="848" y="32" fill="#6ee7a0" font-size="11"
+                    text-anchor="middle" font-family="Inter,sans-serif" font-weight="700"
+                    opacity="0">Step 1/5</text>
+            </svg>
+
+            <!-- Mobile legend -->
+            <div class="gh-legend" aria-label="Diagram colour legend">
+              <span class="gh-leg-item"><span class="gh-leg-dot gh-dot-sun"></span>Sun</span>
+              <span class="gh-leg-item"><span class="gh-leg-dot gh-dot-ray"></span>Sunlight</span>
+              <span class="gh-leg-item"><span class="gh-leg-dot gh-dot-heat"></span>Heat up</span>
+              <span class="gh-leg-item"><span class="gh-leg-dot gh-dot-trap"></span>Trapped heat</span>
+              <span class="gh-leg-item"><span class="gh-leg-dot gh-dot-atmos"></span>Gas layer</span>
+            </div>
+          </div>
+
+          <!-- Step Info Panel -->
+          <div class="gh-step-panel" id="gh-step-panel" aria-live="polite">
+
+            <!-- Idle state (before animation starts) -->
+            <div class="gh-idle-state" id="gh-idle-state">
+              <div class="gh-idle-icon" aria-hidden="true">🔬</div>
+              <h4>See It in Action</h4>
+              <p>Press <strong>"See How It Works"</strong> to watch the greenhouse effect unfold step by step — exactly as it happens in our atmosphere.</p>
+              <ul class="gh-preview-list">
+                <li>☀️ Solar energy from the Sun</li>
+                <li>🌍 Earth absorbs &amp; emits heat</li>
+                <li>☁️ Gas layer traps warmth</li>
+                <li>🌡️ Warming intensifies</li>
+              </ul>
+            </div>
+
+            <!-- Active step state -->
+            <div class="gh-active-state" id="gh-active-state" style="display:none">
+              <div class="gh-step-pill" id="gh-step-pill">Step 1 of 5</div>
+              <div class="gh-step-big-icon" id="gh-step-big-icon" aria-hidden="true">☀️</div>
+              <h4 class="gh-step-title" id="gh-step-title">Sunlight Reaches Earth</h4>
+              <p class="gh-step-body" id="gh-step-body">The Sun radiates energy...</p>
+              <div class="gh-prog-track">
+                <div class="gh-prog-bar" id="gh-prog-bar" style="width:20%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- end gh-viz-layout -->
+
+        <!-- Controls Row -->
+        <div class="gh-controls reveal">
+          <button class="btn btn-primary gh-ctrl-btn" id="gh-start-btn">▶ See How It Works</button>
+          <button class="btn gh-ctrl-btn gh-next-btn" id="gh-next-btn" style="display:none">Next Step →</button>
+          <button class="btn gh-ctrl-btn gh-reset-btn" id="gh-reset-btn" style="display:none">↺ Reset</button>
+          <div class="gh-step-dots" id="gh-step-dots" aria-label="Step navigation">
+            <button class="gh-sdot" data-step="0" aria-label="Step 1: Sunlight"></button>
+            <button class="gh-sdot" data-step="1" aria-label="Step 2: Earth absorbs"></button>
+            <button class="gh-sdot" data-step="2" aria-label="Step 3: Heat rises"></button>
+            <button class="gh-sdot" data-step="3" aria-label="Step 4: Gases trap heat"></button>
+            <button class="gh-sdot" data-step="4" aria-label="Step 5: Warming intensifies"></button>
+          </div>
+        </div>
+
+        <!-- Greenhouse Gas Cards -->
+        <div class="gh-gas-section reveal">
+          <h4 class="gh-gas-heading">🧪 Click a Greenhouse Gas to Learn More</h4>
+          <div class="gh-gas-grid" role="list">
+
+            <button class="gh-gas-card" id="gcard-co2" data-gas="co2"
+                    aria-pressed="false" role="listitem">
+              <div class="ghgc-symbol co2-sym">CO₂</div>
+              <div class="ghgc-name">Carbon Dioxide</div>
+              <div class="ghgc-pct">76% of GHG emissions</div>
+              <div class="ghgc-bar-track">
+                <div class="ghgc-bar-fill" style="width:76%;background:linear-gradient(90deg,#ef4444,#f97316)"></div>
+              </div>
+            </button>
+
+            <button class="gh-gas-card" id="gcard-ch4" data-gas="ch4"
+                    aria-pressed="false" role="listitem">
+              <div class="ghgc-symbol ch4-sym">CH₄</div>
+              <div class="ghgc-name">Methane</div>
+              <div class="ghgc-pct">16% of GHG emissions</div>
+              <div class="ghgc-bar-track">
+                <div class="ghgc-bar-fill" style="width:16%;background:linear-gradient(90deg,#f59e0b,#fbbf24)"></div>
+              </div>
+            </button>
+
+            <button class="gh-gas-card" id="gcard-n2o" data-gas="n2o"
+                    aria-pressed="false" role="listitem">
+              <div class="ghgc-symbol n2o-sym">N₂O</div>
+              <div class="ghgc-name">Nitrous Oxide</div>
+              <div class="ghgc-pct">6% of GHG emissions</div>
+              <div class="ghgc-bar-track">
+                <div class="ghgc-bar-fill" style="width:6%;background:linear-gradient(90deg,#7c3aed,#8b5cf6)"></div>
+              </div>
+            </button>
+
+            <button class="gh-gas-card" id="gcard-fgas" data-gas="fgas"
+                    aria-pressed="false" role="listitem">
+              <div class="ghgc-symbol fgas-sym">F-Gas</div>
+              <div class="ghgc-name">Fluorinated Gases</div>
+              <div class="ghgc-pct">2% of GHG emissions</div>
+              <div class="ghgc-bar-track">
+                <div class="ghgc-bar-fill" style="width:2%;background:linear-gradient(90deg,#0d9488,#14b8a6)"></div>
+              </div>
+            </button>
+
+          </div>
+
+          <!-- Gas Info Panel (shown on card click) -->
+          <div class="gh-gas-panel" id="gh-gas-panel" style="display:none"
+               role="region" aria-live="polite" aria-label="Gas details panel">
+            <div class="ghgp-header">
+              <span class="ghgp-sym-lg" id="ghgp-sym">CO₂</span>
+              <div class="ghgp-title-wrap">
+                <h4 class="ghgp-name" id="ghgp-name">Carbon Dioxide</h4>
+                <span class="ghgp-tag" id="ghgp-tag">Most Abundant GHG</span>
+              </div>
+              <button class="ghgp-close" id="ghgp-close" aria-label="Close gas details panel">✕</button>
+            </div>
+            <div class="ghgp-body">
+              <div class="ghgp-col">
+                <h5>📋 What Is It?</h5>
+                <p id="ghgp-desc">—</p>
+              </div>
+              <div class="ghgp-col">
+                <h5>🏭 Major Sources</h5>
+                <ul id="ghgp-sources"></ul>
+              </div>
+              <div class="ghgp-col">
+                <h5>🌡️ Warming Power</h5>
+                <p id="ghgp-warming">—</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- end gh-gas-section -->
+
+        <!-- Bottom Info Row: Why + Did You Know -->
+        <div class="gh-info-row reveal">
+
+          <!-- Why Does This Matter? -->
+          <div class="gh-why-panel">
+            <div class="gh-why-icon" aria-hidden="true">🤔</div>
+            <h4 class="gh-why-title">Why Does This Matter?</h4>
+            <p>
+              The greenhouse effect is <strong>natural and essential</strong>. Without it, Earth's
+              surface would average a freezing <strong>−18°C</strong> instead of the life-supporting
+              <strong>+15°C</strong> we enjoy today.
+            </p>
+            <p>
+              The problem: human activities are adding <em>extra</em> greenhouse gases far beyond
+              natural levels. This <strong>enhanced greenhouse effect</strong> is driving global
+              temperatures upward at a rate unprecedented in human history.
+            </p>
+            <p>
+              Even <strong>1.5°C of warming</strong> above pre-industrial levels — a threshold we are
+              dangerously close to crossing — is projected to trigger extreme weather, coral reef
+              collapse, and food insecurity for hundreds of millions worldwide.
+            </p>
+          </div>
+
+          <!-- Did You Know? -->
+          <div class="gh-dyk-panel">
+            <div class="gh-dyk-header">
+              <span class="gh-dyk-bulb" aria-hidden="true">💡</span>
+              <h4>Did You Know?</h4>
+            </div>
+            <div class="gh-dyk-fact" id="gh-dyk-fact">
+              <p id="gh-dyk-text" aria-live="polite">Loading fact…</p>
+            </div>
+            <div class="gh-dyk-footer">
+              <div class="gh-dyk-dots-row" id="gh-dyk-dots-row" aria-label="Fact navigation dots"></div>
+              <button class="gh-dyk-btn" id="gh-dyk-next-btn" aria-label="Show next climate fact">
+                Next Fact →
+              </button>
+            </div>
+          </div>
+
+        </div><!-- end gh-info-row -->
+
+      </div><!-- end greenhouse-section -->
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       CLIMATE DATA DASHBOARD
+       ============================================= -->
+  <section id="data-dashboard" aria-labelledby="dashboard-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">📊 Interactive Dashboard</span>
+        <h2 class="section-title" id="dashboard-heading">Climate Change Data Dashboard</h2>
+        <p class="section-subtitle">
+          Explore illustrative climate trends across key indicators.
+          All values are educational samples to help visualise the scale and direction of change.
+        </p>
+      </header>
+
+      <!-- ── Stat Cards ─────────────────────────────── -->
+      <div class="dash-stat-grid reveal">
+
+        <div class="dash-stat-card" id="dsc-temp">
+          <div class="dsc-icon" style="background:rgba(239,68,68,0.12)">🌡️</div>
+          <div class="dsc-body">
+            <div class="dsc-value">
+              <span class="dsc-prefix">+</span><span class="dsc-num" id="dscn-temp">0</span><span class="dsc-unit">°C</span>
+            </div>
+            <div class="dsc-label">Global Temperature Rise</div>
+            <div class="dsc-sub">Above pre-industrial baseline (approx.)</div>
+          </div>
+          <span class="dsc-trend dsc-up">↑ Warming</span>
+        </div>
+
+        <div class="dash-stat-card" id="dsc-co2">
+          <div class="dsc-icon" style="background:rgba(14,165,233,0.12)">🌫️</div>
+          <div class="dsc-body">
+            <div class="dsc-value">
+              <span class="dsc-num" id="dscn-co2">0</span><span class="dsc-unit"> ppm</span>
+            </div>
+            <div class="dsc-label">CO₂ Concentration</div>
+            <div class="dsc-sub">Parts per million (approx.)</div>
+          </div>
+          <span class="dsc-trend dsc-up">↑ Rising</span>
+        </div>
+
+        <div class="dash-stat-card" id="dsc-renew">
+          <div class="dsc-icon" style="background:rgba(40,168,88,0.12)">⚡</div>
+          <div class="dsc-body">
+            <div class="dsc-value">
+              <span class="dsc-prefix">~</span><span class="dsc-num" id="dscn-renew">0</span><span class="dsc-unit">%</span>
+            </div>
+            <div class="dsc-label">Renewable Energy Share</div>
+            <div class="dsc-sub">Of global electricity (approx.)</div>
+          </div>
+          <span class="dsc-trend dsc-good">↑ Growing</span>
+        </div>
+
+        <div class="dash-stat-card" id="dsc-sea">
+          <div class="dsc-icon" style="background:rgba(13,148,136,0.12)">🌊</div>
+          <div class="dsc-body">
+            <div class="dsc-value">
+              <span class="dsc-prefix">+</span><span class="dsc-num" id="dscn-sea">0</span><span class="dsc-unit"> cm</span>
+            </div>
+            <div class="dsc-label">Sea Level Rise</div>
+            <div class="dsc-sub">Since early 1900s (approx.)</div>
+          </div>
+          <span class="dsc-trend dsc-up">↑ Accelerating</span>
+        </div>
+
+      </div><!-- end dash-stat-grid -->
+
+      <!-- ── Chart Panel ─────────────────────────────── -->
+      <div class="dash-chart-panel reveal reveal-delay-1">
+
+        <!-- Tab bar -->
+        <div class="dash-tab-bar" role="tablist" aria-label="Climate data charts">
+          <button class="dash-tab active" id="dtab-temp"    data-chart="temp"
+                  role="tab" aria-selected="true"  aria-controls="dchart-temp">🌡️ Temperature</button>
+          <button class="dash-tab"        id="dtab-co2"     data-chart="co2"
+                  role="tab" aria-selected="false" aria-controls="dchart-co2">🌫️ CO₂ Levels</button>
+          <button class="dash-tab"        id="dtab-renew"   data-chart="renew"
+                  role="tab" aria-selected="false" aria-controls="dchart-renew">⚡ Renewables</button>
+          <button class="dash-tab"        id="dtab-sources" data-chart="sources"
+                  role="tab" aria-selected="false" aria-controls="dchart-sources">🏭 GHG Sources</button>
+        </div>
+
+        <!-- Chart panes -->
+        <div class="dash-chart-body">
+
+          <!-- Pane 1: Temperature -->
+          <div class="dash-chart-pane" id="dchart-temp" role="tabpanel" aria-labelledby="dtab-temp">
+            <div class="chart-title-bar">
+              <h3 class="chart-main-title">🌡️ Global Temperature Anomaly Trend</h3>
+              <span class="chart-edu-tag">Educational Sample Data</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartTemp"
+                      aria-label="Line chart showing illustrative global temperature anomaly trend"
+                      role="img"></canvas>
+            </div>
+            <p class="chart-axis-note">Y-axis: Illustrative temperature anomaly in °C relative to a sample baseline</p>
+          </div>
+
+          <!-- Pane 2: CO₂ -->
+          <div class="dash-chart-pane" id="dchart-co2" role="tabpanel" aria-labelledby="dtab-co2" hidden>
+            <div class="chart-title-bar">
+              <h3 class="chart-main-title">🌫️ Atmospheric CO₂ Concentration</h3>
+              <span class="chart-edu-tag">Educational Sample Data</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartCO2"
+                      aria-label="Line chart showing illustrative CO2 concentration in parts per million"
+                      role="img"></canvas>
+            </div>
+            <p class="chart-axis-note">Y-axis: Illustrative CO₂ concentration in parts per million (ppm)</p>
+          </div>
+
+          <!-- Pane 3: Renewables -->
+          <div class="dash-chart-pane" id="dchart-renew" role="tabpanel" aria-labelledby="dtab-renew" hidden>
+            <div class="chart-title-bar">
+              <h3 class="chart-main-title">⚡ Renewable Energy Share of Global Electricity</h3>
+              <span class="chart-edu-tag">Educational Sample Data</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="chartRenew"
+                      aria-label="Area chart showing illustrative growth of renewable energy share"
+                      role="img"></canvas>
+            </div>
+            <p class="chart-axis-note">Y-axis: Illustrative renewable share as % of global electricity generation</p>
+          </div>
+
+          <!-- Pane 4: GHG Sources -->
+          <div class="dash-chart-pane" id="dchart-sources" role="tabpanel" aria-labelledby="dtab-sources" hidden>
+            <div class="chart-title-bar">
+              <h3 class="chart-main-title">🏭 Greenhouse Gas Emissions by Sector</h3>
+              <span class="chart-edu-tag">Educational Sample Data</span>
+            </div>
+            <div class="chart-canvas-wrap chart-doughnut-wrap">
+              <canvas id="chartSources"
+                      aria-label="Doughnut chart showing illustrative GHG emissions by sector"
+                      role="img"></canvas>
+            </div>
+            <p class="chart-axis-note">Illustrative proportional breakdown of major GHG emission sectors</p>
+          </div>
+
+        </div><!-- end dash-chart-body -->
+
+        <!-- Educational disclaimer -->
+        <div class="dash-disclaimer" role="note">
+          <span aria-hidden="true">ℹ️</span>
+          <p>
+            <strong>Educational Note:</strong> Data shown is for educational visualization purposes only.
+            Values are illustrative sample data and should <strong>not</strong> be interpreted as official
+            current measurements. For accurate data, consult NASA, NOAA, or the IPCC.
+          </p>
+        </div>
+
+      </div><!-- end dash-chart-panel -->
+
+      <!-- ── What Does This Mean? ─────────────────────── -->
+      <div class="dash-meaning reveal">
+        <div class="dash-meaning-inner">
+          <div class="dash-meaning-emoji" aria-hidden="true">🔍</div>
+          <div class="dash-meaning-content">
+            <h3>What Do These Trends Mean?</h3>
+            <p>
+              <strong>Long-term climate trends</strong> are far more meaningful than individual weather
+              events or single-year measurements. Climate scientists study patterns across
+              <em>decades</em> — not single days or seasons.
+            </p>
+            <p>
+              A cold winter in one region does not contradict global warming; it is the consistent,
+              decade-long rise in <em>global average temperatures</em> that defines climate change.
+              Similarly, year-to-year fluctuations in CO₂ or renewables matter less than the
+              clear directional trend visible across the charts above.
+            </p>
+            <p>
+              Understanding these long-term trends — and the human activities driving them — is the
+              essential first step toward informed climate action.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end container -->
+  </section><!-- end #data-dashboard -->
+
+  <!-- =============================================
+       CARBON FOOTPRINT CALCULATOR
+       ============================================= -->
+  <section id="calculator" aria-labelledby="calc-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">🧮 Interactive Tool</span>
+        <h2 class="section-title" id="calc-heading">Carbon Footprint Calculator</h2>
+        <p class="section-subtitle">
+          Estimate your personal annual carbon footprint in minutes.
+          Understand which activities contribute most — and where to focus your efforts.
+        </p>
+      </header>
+
+      <div class="calc-disclaimer reveal">
+        <span aria-hidden="true">⚠️</span>
+        <p>
+          This calculator provides an <strong>educational estimate</strong> using simplified emission
+          factors. It is <strong>not</strong> an official carbon footprint assessment.
+          Results are indicative and intended for learning purposes only.
+        </p>
+      </div>
+
+      <!-- ── Input Card Grid ── -->
+      <div class="calc-grid reveal">
+
+        <!-- Left column: inputs -->
+        <div class="calc-inputs-col">
+
+          <!-- Transport group -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-icon" aria-hidden="true">🚗</span>
+              <h3 class="calc-group-title">Transport</h3>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="inp-car">Daily Personal Vehicle Travel</label>
+              <div class="calc-input-wrap">
+                <input class="calc-input" id="inp-car" type="number"
+                       min="0" step="1" value="30" inputmode="numeric"
+                       aria-describedby="car-hint"
+                       placeholder="e.g. 30"/>
+                <span class="calc-unit">km / day</span>
+              </div>
+              <span class="calc-hint" id="car-hint">Average daily distance driven by car or motorcycle</span>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="inp-bus">Public Transport Travel</label>
+              <div class="calc-input-wrap">
+                <input class="calc-input" id="inp-bus" type="number"
+                       min="0" step="1" value="10" inputmode="numeric"
+                       aria-describedby="bus-hint"
+                       placeholder="e.g. 10"/>
+                <span class="calc-unit">km / day</span>
+              </div>
+              <span class="calc-hint" id="bus-hint">Bus, metro, train or tram distance per day</span>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="inp-flights">Flights Per Year</label>
+              <div class="calc-input-wrap">
+                <input class="calc-input" id="inp-flights" type="number"
+                       min="0" step="1" value="2" inputmode="numeric"
+                       aria-describedby="flights-hint"
+                       placeholder="e.g. 2"/>
+                <span class="calc-unit">flights / year</span>
+              </div>
+              <span class="calc-hint" id="flights-hint">Count one round trip as 2 flights</span>
+            </div>
+          </div>
+
+          <!-- Energy group -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-icon" aria-hidden="true">⚡</span>
+              <h3 class="calc-group-title">Energy</h3>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="inp-elec">Monthly Electricity Usage</label>
+              <div class="calc-input-wrap">
+                <input class="calc-input" id="inp-elec" type="number"
+                       min="0" step="10" value="200" inputmode="numeric"
+                       aria-describedby="elec-hint"
+                       placeholder="e.g. 200"/>
+                <span class="calc-unit">kWh / month</span>
+              </div>
+              <span class="calc-hint" id="elec-hint">Check your electricity bill for usage</span>
+            </div>
+          </div>
+
+          <!-- Food group -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-icon" aria-hidden="true">🍗</span>
+              <h3 class="calc-group-title">Food</h3>
+            </div>
+
+            <div class="calc-field">
+              <label class="calc-label" for="inp-meat">Meat Consumption Level</label>
+              <div class="calc-select-wrap">
+                <select class="calc-select" id="inp-meat" aria-describedby="meat-hint">
+                  <option value="low">🥗 Low — Mostly plant-based</option>
+                  <option value="moderate" selected>🍽️ Moderate — Some meat</option>
+                  <option value="high">🥩 High — Meat with most meals</option>
+                </select>
+              </div>
+              <span class="calc-hint" id="meat-hint">Meat production has a high carbon cost</span>
+            </div>
+          </div>
+
+        </div><!-- end calc-inputs-col -->
+
+        <!-- Right column: quick-guide + CTA -->
+        <div class="calc-guide-col">
+          <div class="calc-guide-card">
+            <div class="calc-guide-title">📖 How It Works</div>
+            <ul class="calc-guide-list">
+              <li><span class="cg-dot" style="background:#ef4444"></span>Fill in each input with your typical usage</li>
+              <li><span class="cg-dot" style="background:#f59e0b"></span>Click <strong>Calculate</strong> to see your estimate</li>
+              <li><span class="cg-dot" style="background:#28a858"></span>Review your breakdown by category</li>
+              <li><span class="cg-dot" style="background:#0ea5e9"></span>Read tips on reducing your footprint</li>
+            </ul>
+            <div class="calc-guide-factors">
+              <div class="calc-factor-title">Emission factors used (educational):</div>
+              <div class="calc-factor-row"><span>🚗 Car</span><span>0.21 kg CO₂e / km</span></div>
+              <div class="calc-factor-row"><span>🚌 Public transport</span><span>0.089 kg CO₂e / km</span></div>
+              <div class="calc-factor-row"><span>⚡ Electricity</span><span>0.45 kg CO₂e / kWh</span></div>
+              <div class="calc-factor-row"><span>🍗 Food (low)</span><span>1 500 kg CO₂e / yr</span></div>
+              <div class="calc-factor-row"><span>🍗 Food (moderate)</span><span>2 500 kg CO₂e / yr</span></div>
+              <div class="calc-factor-row"><span>🍗 Food (high)</span><span>3 800 kg CO₂e / yr</span></div>
+              <div class="calc-factor-row"><span>✈️ Flight</span><span>1 100 kg CO₂e / flight</span></div>
+            </div>
+          </div>
+
+          <!-- CTA buttons -->
+          <div class="calc-actions">
+            <button class="btn btn-primary calc-cta" id="calc-btn"
+                    aria-label="Calculate your carbon footprint">
+              🌍 Calculate My Footprint
+            </button>
+            <button class="btn calc-reset" id="calc-reset-btn"
+                    aria-label="Reset calculator inputs">
+              ↺ Reset Calculator
+            </button>
+          </div>
+
+          <!-- Validation message -->
+          <div class="calc-validation-msg" id="calc-validation" role="alert" aria-live="polite" hidden></div>
+        </div><!-- end calc-guide-col -->
+
+      </div><!-- end calc-grid -->
+
+      <!-- ── Results Panel (hidden until calculated) ── -->
+      <div class="calc-results" id="calc-results" hidden aria-live="polite">
+
+        <!-- Total card -->
+        <div class="calc-total-card reveal" id="calc-total-card">
+          <div class="ctc-header">
+            <span class="ctc-globe" aria-hidden="true">🌍</span>
+            <div>
+              <div class="ctc-label">Your Estimated Carbon Footprint</div>
+              <div class="ctc-unit">Annual estimate &nbsp;·&nbsp; educational sample</div>
+            </div>
+            <div class="ctc-badge" id="ctc-badge">MODERATE</div>
+          </div>
+          <div class="ctc-total-row">
+            <div class="ctc-big-num" id="ctc-big-num">0</div>
+            <div class="ctc-big-unit">kg CO₂e / year</div>
+          </div>
+          <div class="ctc-context" id="ctc-context"></div>
+        </div>
+
+        <!-- Breakdown bars -->
+        <div class="calc-breakdown reveal" id="calc-breakdown">
+          <h3 class="cb-title">📊 Emissions Breakdown</h3>
+          <div class="cb-bars" id="cb-bars"></div>
+        </div>
+
+        <!-- Tips panel -->
+        <div class="calc-tips reveal" id="calc-tips">
+          <h3 class="ct-title">💡 How Can You Reduce Your Footprint?</h3>
+          <div class="ct-top-tip" id="ct-top-tip"></div>
+          <div class="ct-general-tips">
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">🚲</span>
+              <div>
+                <strong>Choose Active Travel</strong>
+                <p>Walk or cycle for short trips to cut transport emissions and improve health.</p>
+              </div>
+            </div>
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">🌿</span>
+              <div>
+                <strong>Eat More Plants</strong>
+                <p>Reducing meat — especially red meat — can significantly lower your food footprint.</p>
+              </div>
+            </div>
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">💡</span>
+              <div>
+                <strong>Switch to Efficiency</strong>
+                <p>LED lighting, smart thermostats and efficient appliances cut electricity use.</p>
+              </div>
+            </div>
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">♻️</span>
+              <div>
+                <strong>Reduce, Reuse, Recycle</strong>
+                <p>Buy less new stuff, repair items, and choose products with less packaging.</p>
+              </div>
+            </div>
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">🌳</span>
+              <div>
+                <strong>Support Green Energy</strong>
+                <p>Switch to a renewable energy tariff or consider solar panels if possible.</p>
+              </div>
+            </div>
+            <div class="ct-tip-card">
+              <span class="ct-tip-icon" aria-hidden="true">✈️</span>
+              <div>
+                <strong>Fly Less</strong>
+                <p>One fewer long-haul flight saves more than a year's worth of driving for many people.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end calc-results -->
+
+    </div><!-- end container -->
+  </section><!-- end #calculator -->
+
+  <!-- =============================================
+       CLIMATE ACTION TRACKER
+       ============================================= -->
+  <section id="action-tracker" aria-labelledby="at-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">🌱 Take Action</span>
+        <h2 class="section-title" id="at-heading">Your Climate Action Tracker</h2>
+        <p class="section-subtitle">
+          Small daily actions add up. Track your eco-friendly habits, build momentum,
+          and see how your choices contribute to a more sustainable lifestyle.
+        </p>
+      </header>
+
+      <!-- ── Main layout: cards left, progress right ── -->
+      <div class="at-layout reveal">
+
+        <!-- Action Cards Grid -->
+        <div class="at-cards-grid" id="at-cards-grid" role="group" aria-label="Climate action cards">
+
+          <label class="at-card" id="atc-water" data-action="water">
+            <input type="checkbox" class="at-checkbox" id="at-chk-water" aria-label="Save Water action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">💧</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Save Water</div>
+                <div class="at-card-desc">Reduce unnecessary water use in daily activities.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-transport" data-action="transport">
+            <input type="checkbox" class="at-checkbox" id="at-chk-transport" aria-label="Use Public Transport action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">🚌</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Use Public Transport</div>
+                <div class="at-card-desc">Choose buses, trains, cycling or walking when possible.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-electricity" data-action="electricity">
+            <input type="checkbox" class="at-checkbox" id="at-chk-electricity" aria-label="Reduce Electricity action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">💡</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Reduce Electricity</div>
+                <div class="at-card-desc">Switch off lights and appliances when not needed.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-plastic" data-action="plastic">
+            <input type="checkbox" class="at-checkbox" id="at-chk-plastic" aria-label="Avoid Single-Use Plastic action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">🚷</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Avoid Single-Use Plastic</div>
+                <div class="at-card-desc">Choose reusable bags, bottles and containers.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-trees" data-action="trees">
+            <input type="checkbox" class="at-checkbox" id="at-chk-trees" aria-label="Plant or Protect Trees action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">🌳</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Plant or Protect Trees</div>
+                <div class="at-card-desc">Plant trees or help protect existing green spaces.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-foodwaste" data-action="foodwaste">
+            <input type="checkbox" class="at-checkbox" id="at-chk-foodwaste" aria-label="Reduce Food Waste action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">🥗</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Reduce Food Waste</div>
+                <div class="at-card-desc">Take only what you need and avoid wasting food.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-recycle" data-action="recycle">
+            <input type="checkbox" class="at-checkbox" id="at-chk-recycle" aria-label="Recycle action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">♻️</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Recycle</div>
+                <div class="at-card-desc">Separate recyclable materials and dispose responsibly.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+          <label class="at-card" id="atc-appliances" data-action="appliances">
+            <input type="checkbox" class="at-checkbox" id="at-chk-appliances" aria-label="Use Energy-Efficient Appliances action">
+            <div class="at-card-inner">
+              <span class="at-icon" aria-hidden="true">⚡</span>
+              <div class="at-card-body">
+                <div class="at-card-title">Use Energy-Efficient Appliances</div>
+                <div class="at-card-desc">Prefer energy-efficient devices and appliances.</div>
+              </div>
+              <span class="at-check-indicator" aria-hidden="true">✔</span>
+            </div>
+          </label>
+
+        </div><!-- end at-cards-grid -->
+
+        <!-- Progress Panel -->
+        <div class="at-progress-panel" id="at-progress-panel">
+
+          <div class="at-progress-header">
+            <span class="at-progress-title">Your Progress</span>
+            <span class="at-score-badge" id="at-score-badge">Getting Started</span>
+          </div>
+
+          <!-- Fraction + % -->
+          <div class="at-fraction-row">
+            <div class="at-fraction" id="at-fraction">
+              <span class="at-frac-done" id="at-frac-done">0</span>
+              <span class="at-frac-sep">/</span>
+              <span class="at-frac-total">8</span>
+            </div>
+            <div class="at-pct" id="at-pct">0%</div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="at-bar-track" role="progressbar"
+               aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+               aria-label="Climate action progress" id="at-bar-track">
+            <div class="at-bar-fill" id="at-bar-fill"></div>
+          </div>
+
+          <!-- Eco score description -->
+          <div class="at-eco-score" id="at-eco-score">
+            <div class="at-eco-label">Eco Score</div>
+            <div class="at-eco-tier" id="at-eco-tier">🌱 Getting Started</div>
+          </div>
+
+          <!-- Personalised message -->
+          <div class="at-message" id="at-message" aria-live="polite">
+            Every journey starts with one small action. 🌱
+          </div>
+
+          <!-- Reset button -->
+          <button class="at-reset-btn" id="at-reset-btn"
+                  aria-label="Reset all action tracker progress">
+            ↺ Reset Progress
+          </button>
+
+        </div><!-- end at-progress-panel -->
+
+      </div><!-- end at-layout -->
+
+    </div><!-- end container -->
+  </section><!-- end #action-tracker -->
+
+  <!-- =============================================
+       CLIMATE CHANGE QUIZ
+       ============================================= -->
+  <section id="climate-quiz" aria-labelledby="cq-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-label">🌍 Test Yourself</span>
+        <h2 class="section-title" id="cq-heading">Test Your Climate Knowledge</h2>
+        <p class="section-subtitle" id="quiz-subtitle">
+          Take this quick quiz to test what you know about climate change.
+        </p>
+      </header>
+
+      <div class="cq-wrapper" id="quiz-container">
+
+        <!-- ── Active quiz panel ──────────────────────── -->
+        <div class="cq-panel" id="cq-panel">
+
+          <!-- Progress -->
+          <div class="cq-progress-area">
+            <div class="cq-meta-row">
+              <span class="cq-q-label" id="quiz-question-number">Question 1 of 10</span>
+              <span class="cq-score-live" id="cq-score-live">Score: 0</span>
+            </div>
+            <div class="cq-bar-track" role="progressbar"
+                 aria-valuemin="0" aria-valuemax="10" aria-valuenow="1"
+                 aria-label="Quiz progress" id="quiz-progress">
+              <div class="cq-bar-fill" id="quiz-progress-fill"></div>
+            </div>
+          </div>
+
+          <!-- Question card -->
+          <div class="cq-question-card">
+            <p class="cq-question-text" id="quiz-question" aria-live="polite"></p>
+
+            <div class="cq-options" id="quiz-options" role="group"
+                 aria-label="Answer options">
+              <!-- Buttons injected by JS -->
+            </div>
+
+            <!-- Feedback -->
+            <div class="cq-feedback" id="quiz-feedback" aria-live="polite" hidden></div>
+
+            <!-- Next button -->
+            <button class="cq-next-btn" id="quiz-next-btn" hidden
+                    aria-label="Go to next question">
+              Next Question &rarr;
+            </button>
+          </div>
+
+        </div><!-- end cq-panel -->
+
+        <!-- ── Results screen ─────────────────────────── -->
+        <div class="cq-results" id="quiz-results" hidden>
+          <div class="cq-results-inner">
+            <span class="cq-results-icon" aria-hidden="true">🌍</span>
+            <h3 class="cq-results-title">Quiz Complete!</h3>
+            <div class="cq-score-display">
+              <span class="cq-score-big" id="quiz-score">0 / 10</span>
+            </div>
+            <div class="cq-pct-display" id="quiz-percentage">0%</div>
+            <p class="cq-result-msg" id="quiz-message"></p>
+            <button class="cq-restart-btn" id="quiz-restart-btn"
+                    aria-label="Restart the climate quiz">
+              ↺ Restart Quiz
+            </button>
+          </div>
+        </div><!-- end quiz-results -->
+
+      </div><!-- end quiz-container -->
+    </div><!-- end container -->
+  </section><!-- end #climate-quiz -->
+
+  <!-- =============================================
+       MYTH VS FACT
+       ============================================= -->
+  <section id="myth-fact" aria-labelledby="mf-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-label">🚧 Separate Truth from Fiction</span>
+        <h2 class="section-title" id="mf-heading">Myth vs Fact</h2>
+        <p class="section-subtitle">
+          Climate change is surrounded by misinformation. Reveal the science-based truth
+          behind some of the most common misconceptions.
+        </p>
+      </header>
+
+      <div class="mf-grid" id="mf-grid">
+
+        <!-- Card 1 -->
+        <div class="mf-card" id="mf-card-1">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"Climate change is a natural cycle. Humans have nothing to do with it."</p>
+          <div class="mf-explanation" id="mf-exp-1" hidden>
+            <strong>✅ Fact:</strong> While Earth has experienced natural climate cycles over millions of years,
+            the current rate of warming is far faster than any natural cycle. Scientific evidence shows
+            that human activities — especially burning fossil fuels — are the dominant cause of warming
+            since the mid-20th century.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-1"
+                  aria-expanded="false" aria-controls="mf-exp-1"
+                  aria-label="Reveal the fact about this climate myth">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="mf-card" id="mf-card-2">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"CO₂ is just a trace gas — it can't possibly affect the entire climate."</p>
+          <div class="mf-explanation" id="mf-exp-2" hidden>
+            <strong>✅ Fact:</strong> Even in small concentrations, CO₂ is highly effective at trapping
+            heat. Pre-industrial CO₂ was around 280 ppm; it is now over 420 ppm — a 50% increase that
+            has measurably raised global average temperatures.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-2"
+                  aria-expanded="false" aria-controls="mf-exp-2"
+                  aria-label="Reveal the fact about CO2 concentration">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="mf-card" id="mf-card-3">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"Scientists disagree about whether climate change is real."</p>
+          <div class="mf-explanation" id="mf-exp-3" hidden>
+            <strong>✅ Fact:</strong> There is overwhelming scientific consensus — over 97% of actively
+            publishing climate scientists agree that human-caused climate change is real and a serious
+            threat. Major scientific organisations worldwide share this position.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-3"
+                  aria-expanded="false" aria-controls="mf-exp-3"
+                  aria-label="Reveal the fact about scientific consensus">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="mf-card" id="mf-card-4">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"Individual actions don't matter — only governments can fix climate change."</p>
+          <div class="mf-explanation" id="mf-exp-4" hidden>
+            <strong>✅ Fact:</strong> Individual choices — diet, transport, energy use, and consumption —
+            collectively account for a significant share of emissions. While systemic policy is essential,
+            widespread individual action accelerates change and signals demand for greener products
+            and services.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-4"
+                  aria-expanded="false" aria-controls="mf-exp-4"
+                  aria-label="Reveal the fact about individual climate action">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="mf-card" id="mf-card-5">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"Renewable energy is too unreliable to replace fossil fuels."</p>
+          <div class="mf-explanation" id="mf-exp-5" hidden>
+            <strong>✅ Fact:</strong> Solar and wind energy, combined with modern battery storage and smart
+            grids, can provide reliable, continuous power. Many countries and regions already run on
+            high percentages of renewable energy. Costs have dropped dramatically over the past decade.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-5"
+                  aria-expanded="false" aria-controls="mf-exp-5"
+                  aria-label="Reveal the fact about renewable energy reliability">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="mf-card" id="mf-card-6">
+          <div class="mf-card-header">
+            <span class="mf-label mf-myth" aria-label="This is a myth">🚨 MYTH</span>
+          </div>
+          <p class="mf-statement">"Climate change only affects polar bears and icebergs — not everyday people."</p>
+          <div class="mf-explanation" id="mf-exp-6" hidden>
+            <strong>✅ Fact:</strong> Climate change affects food and water security, public health, extreme
+            weather events, displacement, and economies worldwide. Vulnerable communities — often those
+            least responsible for emissions — are already experiencing its severe impacts.
+          </div>
+          <button class="mf-reveal-btn" id="mf-btn-6"
+                  aria-expanded="false" aria-controls="mf-exp-6"
+                  aria-label="Reveal the fact about who climate change affects">
+            Reveal Fact ▼
+          </button>
+        </div>
+
+      </div><!-- end mf-grid -->
+    </div><!-- end container -->
+  </section><!-- end #myth-fact -->
+
+  <!-- =============================================
+       CLIMATE TIPS
+       ============================================= -->
+  <section id="climate-tips" aria-labelledby="ct-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-label">💡 Take Action</span>
+        <h2 class="section-title" id="ct-heading">Climate Tips</h2>
+        <p class="section-subtitle">
+          Simple, practical actions that can make a real difference — one choice at a time.
+        </p>
+      </header>
+
+      <div class="ct-grid" id="ct-grid">
+
+        <!-- Card 1: Energy -->
+        <div class="ct-card" id="ct-card-energy">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">⚡</span>
+            <div>
+              <h3 class="ct-title">Energy</h3>
+              <p class="ct-summary">Small changes in how you use electricity at home can reduce your carbon footprint meaningfully over time.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-energy" hidden>
+            <ul>
+              <li>Turn off lights, screens, and appliances when not in use.</li>
+              <li>Switch to LED bulbs — they use up to 80% less energy than incandescent bulbs.</li>
+              <li>Set your thermostat a degree or two lower in winter and higher in summer.</li>
+              <li>Choose energy-efficient appliances (look for energy-rating labels).</li>
+              <li>Unplug chargers and standby devices — they draw power even when idle.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-energy"
+                  aria-expanded="false" aria-controls="ct-tips-energy"
+                  aria-label="Show energy saving tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+        <!-- Card 2: Transport -->
+        <div class="ct-card" id="ct-card-transport">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">🚌</span>
+            <div>
+              <h3 class="ct-title">Transport</h3>
+              <p class="ct-summary">How you get around is one of the biggest factors in your personal carbon footprint.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-transport" hidden>
+            <ul>
+              <li>Walk or cycle for short journeys where it is safe and practical.</li>
+              <li>Use public transport instead of driving when available.</li>
+              <li>Carpool with colleagues or neighbours when driving is necessary.</li>
+              <li>Combine errands into one trip to reduce overall distance driven.</li>
+              <li>Consider hybrid or electric vehicles when replacing a car.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-transport"
+                  aria-expanded="false" aria-controls="ct-tips-transport"
+                  aria-label="Show transport tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+        <!-- Card 3: Food -->
+        <div class="ct-card" id="ct-card-food">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">🌱</span>
+            <div>
+              <h3 class="ct-title">Food</h3>
+              <p class="ct-summary">Food production accounts for a significant share of global emissions. Thoughtful choices help.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-food" hidden>
+            <ul>
+              <li>Reduce food waste — plan meals and store food properly.</li>
+              <li>Try including more plant-based meals in your week when practical.</li>
+              <li>Buy local and seasonal produce where available.</li>
+              <li>Compost food scraps instead of sending them to landfill.</li>
+              <li>Avoid single-use packaging when shopping.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-food"
+                  aria-expanded="false" aria-controls="ct-tips-food"
+                  aria-label="Show food tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+        <!-- Card 4: Waste -->
+        <div class="ct-card" id="ct-card-waste">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">♻️</span>
+            <div>
+              <h3 class="ct-title">Waste</h3>
+              <p class="ct-summary">Reducing what we throw away lowers the energy and resources needed to process waste.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-waste" hidden>
+            <ul>
+              <li>Reduce unnecessary purchases — ask yourself if you really need an item.</li>
+              <li>Reuse bags, containers, and packaging rather than buying new ones.</li>
+              <li>Recycle correctly according to your local council’s guidelines.</li>
+              <li>Repair items before replacing them when possible.</li>
+              <li>Donate or sell usable items rather than discarding them.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-waste"
+                  aria-expanded="false" aria-controls="ct-tips-waste"
+                  aria-label="Show waste reduction tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+        <!-- Card 5: Water -->
+        <div class="ct-card" id="ct-card-water">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">💧</span>
+            <div>
+              <h3 class="ct-title">Water</h3>
+              <p class="ct-summary">Treating and pumping water uses energy. Using water carefully reduces both water and energy waste.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-water" hidden>
+            <ul>
+              <li>Turn off the tap while brushing teeth or washing dishes.</li>
+              <li>Take shorter showers when practical.</li>
+              <li>Fix dripping taps and report leaks promptly.</li>
+              <li>Use a washing machine with a full load rather than partial loads.</li>
+              <li>Collect rainwater for watering plants if possible.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-water"
+                  aria-expanded="false" aria-controls="ct-tips-water"
+                  aria-label="Show water saving tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+        <!-- Card 6: Everyday Choices -->
+        <div class="ct-card" id="ct-card-everyday">
+          <div class="ct-card-top">
+            <span class="ct-icon" aria-hidden="true">🌍</span>
+            <div>
+              <h3 class="ct-title">Everyday Choices</h3>
+              <p class="ct-summary">Everyday decisions about what we buy and how we live add up to a significant collective impact.</p>
+            </div>
+          </div>
+          <div class="ct-tips-list" id="ct-tips-everyday" hidden>
+            <ul>
+              <li>Buy durable, quality products rather than cheap disposable ones.</li>
+              <li>Reuse what you already own before buying something new.</li>
+              <li>Support businesses and brands with genuine environmental commitments.</li>
+              <li>Talk to friends and family about climate-friendly choices — social norms matter.</li>
+              <li>Stay informed and encourage responsible environmental policy.</li>
+            </ul>
+          </div>
+          <button class="ct-toggle-btn" id="ct-btn-everyday"
+                  aria-expanded="false" aria-controls="ct-tips-everyday"
+                  aria-label="Show everyday choice tips">
+            Show Tips <span class="ct-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+        </div>
+
+      </div><!-- end ct-grid -->
+    </div><!-- end container -->
+  </section><!-- end #climate-tips -->
+
+  <!-- =============================================
+       CAUSES SECTION
+       ============================================= -->
+  <section id="causes" aria-labelledby="causes-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">⚠️ Root Causes</span>
+        <h2 class="section-title" id="causes-heading">What Causes Climate Change?</h2>
+        <p class="section-subtitle">
+          Human activities are the primary driver of climate change. Here are the major sources
+          contributing to rising greenhouse gas emissions worldwide.
+        </p>
+      </header>
+
+      <div class="causes-grid" role="list">
+
+        <!-- Card 1: Fossil Fuels -->
+        <article class="cause-card reveal" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(239,68,68,0.1)">🏭</div>
+          <h3>Burning Fossil Fuels</h3>
+          <p>Coal, oil, and natural gas combustion for energy and electricity is the largest source of greenhouse gas emissions — responsible for about 75% of global emissions.</p>
+          <span class="cause-tag" style="background:rgba(239,68,68,0.08);color:#dc2626">
+            #1 Cause · 75% of Emissions
+          </span>
+        </article>
+
+        <!-- Card 2: Deforestation -->
+        <article class="cause-card reveal reveal-delay-1" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(40,168,88,0.1)">🌳</div>
+          <h3>Deforestation</h3>
+          <p>Forests absorb CO₂. Cutting and burning them releases stored carbon back into the atmosphere while removing our planet's natural carbon sinks.</p>
+          <span class="cause-tag" style="background:rgba(40,168,88,0.08);color:#16a34a">
+            Land Use · 10–15% of Emissions
+          </span>
+        </article>
+
+        <!-- Card 3: Transportation -->
+        <article class="cause-card reveal reveal-delay-2" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(59,130,246,0.1)">🚗</div>
+          <h3>Transportation</h3>
+          <p>Cars, trucks, ships, and aircraft burn vast amounts of fossil fuels. Transportation accounts for approximately 16% of global greenhouse gas emissions.</p>
+          <span class="cause-tag" style="background:rgba(59,130,246,0.08);color:#2563eb">
+            Transport · ~16% of Emissions
+          </span>
+        </article>
+
+        <!-- Card 4: Industrial Activities -->
+        <article class="cause-card reveal" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(124,92,62,0.1)">⚙️</div>
+          <h3>Industrial Activities</h3>
+          <p>Manufacturing cement, steel, and chemicals releases enormous amounts of CO₂ and other greenhouse gases. Industry accounts for about 21% of global emissions.</p>
+          <span class="cause-tag" style="background:rgba(124,92,62,0.08);color:#92400e">
+            Industry · ~21% of Emissions
+          </span>
+        </article>
+
+        <!-- Card 5: Agriculture -->
+        <article class="cause-card reveal reveal-delay-1" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(245,158,11,0.1)">🌾</div>
+          <h3>Agriculture</h3>
+          <p>Livestock farming produces methane, a potent greenhouse gas. Rice paddies, fertilizer use, and land clearing for farming all contribute significantly to emissions.</p>
+          <span class="cause-tag" style="background:rgba(245,158,11,0.08);color:#d97706">
+            Food & Land · ~10% of Emissions
+          </span>
+        </article>
+
+        <!-- Card 6: Waste -->
+        <article class="cause-card reveal reveal-delay-2" role="listitem">
+          <div class="cause-icon-wrap" style="background:rgba(13,148,136,0.1)">🗑️</div>
+          <h3>Waste</h3>
+          <p>Landfills decomposing organic waste produce methane. Wastewater treatment and incineration also release greenhouse gases into the atmosphere.</p>
+          <span class="cause-tag" style="background:rgba(13,148,136,0.08);color:#0f766e">
+            Waste Sector · ~3% of Emissions
+          </span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       EFFECTS SECTION
+       ============================================= -->
+  <section id="effects" aria-labelledby="effects-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">🌊 Consequences</span>
+        <h2 class="section-title" id="effects-heading">Effects of Climate Change</h2>
+        <p class="section-subtitle">
+          Climate change is already affecting every corner of the planet. These are the most visible
+          and alarming consequences we face today.
+        </p>
+      </header>
+
+      <div class="effects-grid" role="list">
+
+        <article class="effect-card ec-1 reveal" role="listitem">
+          <span class="effect-emoji">🌡️</span>
+          <h3>Rising Temperatures</h3>
+          <p>Global average temperatures have risen 1.1°C since the 1800s, with record-breaking heat waves becoming more frequent and intense.</p>
+        </article>
+
+        <article class="effect-card ec-2 reveal reveal-delay-1" role="listitem">
+          <span class="effect-emoji">🧊</span>
+          <h3>Melting Glaciers</h3>
+          <p>Glaciers and ice sheets are shrinking at alarming rates. The Arctic is warming nearly four times faster than the rest of the world.</p>
+        </article>
+
+        <article class="effect-card ec-3 reveal reveal-delay-2" role="listitem">
+          <span class="effect-emoji">🌊</span>
+          <h3>Sea Level Rise</h3>
+          <p>Global sea levels have risen ~20 cm since 1900 and are accelerating. Coastal cities and low-lying islands face catastrophic flooding risks.</p>
+        </article>
+
+        <article class="effect-card ec-4 reveal reveal-delay-3" role="listitem">
+          <span class="effect-emoji">⛈️</span>
+          <h3>Extreme Weather</h3>
+          <p>Hurricanes, typhoons, and storms are becoming more powerful and frequent as warmer oceans fuel more intense storm systems worldwide.</p>
+        </article>
+
+        <article class="effect-card ec-5 reveal" role="listitem">
+          <span class="effect-emoji">🏜️</span>
+          <h3>Droughts</h3>
+          <p>Prolonged droughts threaten food security, water supplies, and agriculture in many regions, particularly in Africa and the Mediterranean.</p>
+        </article>
+
+        <article class="effect-card ec-6 reveal reveal-delay-1" role="listitem">
+          <span class="effect-emoji">🌧️</span>
+          <h3>Floods</h3>
+          <p>Heavier rainfall events are causing more frequent and devastating floods, destroying infrastructure, displacing millions of people globally.</p>
+        </article>
+
+        <article class="effect-card ec-7 reveal reveal-delay-2" role="listitem">
+          <span class="effect-emoji">🔥</span>
+          <h3>Wildfires</h3>
+          <p>Hotter, drier conditions fuel larger and longer wildfire seasons. Millions of acres burn each year, destroying habitats and air quality.</p>
+        </article>
+
+        <article class="effect-card ec-8 reveal reveal-delay-3" role="listitem">
+          <span class="effect-emoji">🦋</span>
+          <h3>Biodiversity Loss</h3>
+          <p>Species are going extinct up to 1,000 times the natural rate. Changing habitats, temperature shifts, and acidic oceans threaten countless species.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SOLUTIONS SECTION
+       ============================================= -->
+  <section id="solutions" aria-labelledby="solutions-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">💡 The Path Forward</span>
+        <h2 class="section-title" id="solutions-heading">Solutions to Climate Change</h2>
+        <p class="section-subtitle">
+          There is hope. From renewable energy to individual actions, there are many ways we can
+          work together to slow and reverse climate change.
+        </p>
+      </header>
+
+      <div class="solutions-grid" role="list">
+
+        <article class="solution-card reveal" role="listitem">
+          <div class="solution-icon" style="background:rgba(245,158,11,0.15)">☀️</div>
+          <h3>Renewable Energy</h3>
+          <p>Transitioning to solar, wind, hydro, and geothermal energy can eliminate fossil fuel dependence. Renewables are now the cheapest source of electricity in history.</p>
+          <span class="solution-badge">⚡ Clean Energy</span>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-1" role="listitem">
+          <div class="solution-icon" style="background:rgba(59,130,246,0.15)">💡</div>
+          <h3>Energy Conservation</h3>
+          <p>Using energy-efficient appliances, improving home insulation, and reducing wasteful consumption can dramatically cut household and industrial emissions.</p>
+          <span class="solution-badge">🏠 Home Impact</span>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-2" role="listitem">
+          <div class="solution-icon" style="background:rgba(13,148,136,0.15)">🚌</div>
+          <h3>Sustainable Transport</h3>
+          <p>Electric vehicles, public transit, cycling, and walking reduce transportation emissions. Shifting to EVs powered by renewables can transform the sector.</p>
+          <span class="solution-badge">🌿 Zero Emissions</span>
+        </article>
+
+        <article class="solution-card reveal" role="listitem">
+          <div class="solution-icon" style="background:rgba(40,168,88,0.15)">🌳</div>
+          <h3>Tree Plantation</h3>
+          <p>Forests are Earth's lungs — planting billions of trees can absorb massive amounts of CO₂. Protecting existing forests is equally critical for carbon storage.</p>
+          <span class="solution-badge">🌱 Carbon Sink</span>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-1" role="listitem">
+          <div class="solution-icon" style="background:rgba(124,92,62,0.15)">♻️</div>
+          <h3>Recycling</h3>
+          <p>Reducing, reusing, and recycling waste decreases landfill methane emissions and reduces the energy needed to produce new materials from scratch.</p>
+          <span class="solution-badge">♻️ Circular Economy</span>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-2" role="listitem">
+          <div class="solution-icon" style="background:rgba(14,165,233,0.15)">💧</div>
+          <h3>Water Conservation</h3>
+          <p>Water treatment and heating requires significant energy. Conserving water, fixing leaks, and using water-efficient appliances reduces overall carbon footprints.</p>
+          <span class="solution-badge">💧 Save Water</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       TAKE ACTION SECTION
+       ============================================= -->
+  <section id="take-action" aria-labelledby="action-heading">
+    <div class="container">
+
+      <div class="action-grid">
+
+        <!-- Left: Content -->
+        <div class="action-content">
+          <span class="section-label">🙌 Make a Difference</span>
+          <h2 class="section-title" id="action-heading">
+            Small Actions.<br />Big Impact.
+          </h2>
+          <p class="section-subtitle">
+            You don't need to be a scientist or politician to fight climate change.
+            Every person's choices matter. Start with these simple steps today.
+          </p>
+
+          <div class="action-steps" role="list">
+
+            <div class="action-step reveal" role="listitem">
+              <div class="step-num" aria-hidden="true">1</div>
+              <div class="step-content">
+                <h4>🔌 Reduce Your Energy Use</h4>
+                <p>Switch to LED bulbs, unplug idle electronics, and opt for energy-efficient appliances.</p>
+              </div>
+            </div>
+
+            <div class="action-step reveal reveal-delay-1" role="listitem">
+              <div class="step-num" aria-hidden="true">2</div>
+              <div class="step-content">
+                <h4>🥗 Eat Less Meat</h4>
+                <p>Reducing meat consumption — especially beef — significantly lowers your carbon footprint.</p>
+              </div>
+            </div>
+
+            <div class="action-step reveal reveal-delay-2" role="listitem">
+              <div class="step-num" aria-hidden="true">3</div>
+              <div class="step-content">
+                <h4>🚶 Choose Greener Transport</h4>
+                <p>Walk, cycle, or use public transport when possible. Consider an electric vehicle.</p>
+              </div>
+            </div>
+
+            <div class="action-step reveal reveal-delay-3" role="listitem">
+              <div class="step-num" aria-hidden="true">4</div>
+              <div class="step-content">
+                <h4>📢 Spread Awareness</h4>
+                <p>Talk to friends, family, and your community. Share knowledge and inspire others to act.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: CTA Visual -->
+        <div class="cta-visual reveal reveal-delay-2">
+          <span class="cta-emoji" aria-hidden="true">🌍</span>
+          <h2>
+            Together We Can<br />
+            <span>Save Our Planet</span>
+          </h2>
+          <p>
+            Climate change is the defining challenge of our time. But with awareness,
+            education, and collective action, we can build a sustainable future
+            for generations to come.
+          </p>
+          <a href="#quiz" class="btn btn-primary" id="action-quiz-btn">
+            🧠 Test Your Knowledge
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       QUIZ SECTION (UI Only)
+       ============================================= -->
+  <section id="quiz" aria-labelledby="quiz-heading">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-label">🧠 Test Yourself</span>
+        <h2 class="section-title" id="quiz-heading">Climate Change Quiz</h2>
+        <p class="section-subtitle">
+          How much do you know about climate change? Take our quiz to test your knowledge
+          and learn fascinating facts along the way.
+        </p>
+      </header>
+
+      <div class="quiz-container reveal">
+        <div class="quiz-card">
+
+          <span class="quiz-icon" aria-hidden="true">🌍</span>
+
+          <h2>Are You Ready to be an EcoChampion?</h2>
+          <p>
+            Challenge yourself with questions about climate science, causes, effects,
+            and solutions. Learn while you play!
+          </p>
+
+          <!-- Quiz Topic Selection -->
+          <div class="quiz-topics" role="list" aria-label="Quiz topics">
+            <button class="quiz-topic" id="topic-basics" role="listitem">
+              📖 Climate Basics
+            </button>
+            <button class="quiz-topic" id="topic-causes" role="listitem">
+              ⚠️ Causes
+            </button>
+            <button class="quiz-topic" id="topic-effects" role="listitem">
+              🌊 Effects
+            </button>
+            <button class="quiz-topic" id="topic-solutions" role="listitem">
+              💡 Solutions
+            </button>
+            <button class="quiz-topic" id="topic-all" role="listitem">
+              🌿 All Topics
+            </button>
+          </div>
+
+          <!-- Quiz Stats Preview -->
+          <div class="quiz-stats" role="list" aria-label="Quiz statistics">
+            <div class="quiz-stat" role="listitem">
+              <span class="quiz-stat-val" id="quiz-q-count">15</span>
+              <span class="quiz-stat-label">Questions</span>
+            </div>
+            <div class="quiz-stat" role="listitem">
+              <span class="quiz-stat-val" id="quiz-time">10</span>
+              <span class="quiz-stat-label">Min Approx.</span>
+            </div>
+            <div class="quiz-stat" role="listitem">
+              <span class="quiz-stat-val" id="quiz-level">Easy</span>
+              <span class="quiz-stat-label">Difficulty</span>
+            </div>
+          </div>
+
+          <!-- Start Quiz Button -->
+          <a href="#climate-quiz" class="btn btn-primary" id="quiz-start-btn"
+             aria-label="Start the 10-question Climate Change Quiz">
+            🚀 Start Quiz
+          </a>
+
+          <div class="quiz-coming-soon" role="status">
+            10 questions &bull; Test your climate knowledge now!
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="nav-logo-icon">🌍</div>
+            <span class="nav-logo-text">Eco<span>Aware</span></span>
+          </div>
+          <p>
+            EcoAware is a college project dedicated to raising awareness about climate change,
+            its causes, effects, and solutions for a sustainable tomorrow.
+          </p>
+          <div class="footer-social" aria-label="Social media links">
+            <button class="social-btn" aria-label="Twitter" title="Twitter">𝕏</button>
+            <button class="social-btn" aria-label="Instagram" title="Instagram">📸</button>
+            <button class="social-btn" aria-label="LinkedIn" title="LinkedIn">in</button>
+            <button class="social-btn" aria-label="YouTube" title="YouTube">▶</button>
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <nav class="footer-col" aria-label="Site navigation">
+          <h4>Explore</h4>
+          <ul role="list">
+            <li><a href="#home"           id="footer-home">Home</a></li>
+            <li><a href="#climate-change" id="footer-climate">Climate Change</a></li>
+            <li><a href="#causes"         id="footer-causes">Causes</a></li>
+            <li><a href="#effects"        id="footer-effects">Effects</a></li>
+            <li><a href="#solutions"      id="footer-solutions">Solutions</a></li>
+          </ul>
+        </nav>
+
+        <!-- Resources Column -->
+        <nav class="footer-col" aria-label="Resources">
+          <h4>Resources</h4>
+          <ul role="list">
+            <li><a href="#take-action" id="footer-action">Take Action</a></li>
+            <li><a href="#quiz"        id="footer-quiz">Take the Quiz</a></li>
+            <li><a href="#climate-change" id="footer-learn">Learn More</a></li>
+            <li><a href="#solutions"      id="footer-act">Act Now</a></li>
+          </ul>
+        </nav>
+
+        <!-- Climate Facts Column -->
+        <div class="footer-col">
+          <h4>Quick Facts</h4>
+          <ul role="list">
+            <li><a href="#climate-change" id="footer-f1">🌡️ +1.1°C warmer since 1850</a></li>
+            <li><a href="#causes"         id="footer-f2">🏭 75% from fossil fuels</a></li>
+            <li><a href="#effects"        id="footer-f3">🌊 20 cm sea level rise</a></li>
+            <li><a href="#solutions"      id="footer-f4">☀️ Renewables are cheapest</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-tagline">
+          <span>EcoAware</span> – Learn. Act. Inspire.
+        </p>
+        <p class="footer-copy">
+          © 2024 EcoAware · A College Project · All Rights Reserved
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Chart.js (loaded before script.js so it is available when initDashboard() runs) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
